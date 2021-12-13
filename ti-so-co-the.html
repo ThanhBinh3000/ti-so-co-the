@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tỉ số cơ thẻ</title>
+</head>
+<input type="text" name="height" id="weight">
+<input type="text" name="height" id="hight">
+<input type="button" value="ketqua" onclick="ketqua()">
+<body>
+<script>
+        function ketqua() {
+            let a = document.getElementById("weight").value;
+            let b = document.getElementById("hight").value;
+            let BMI = a / (b ^ 2);
+            if (BMI < 18) {
+                document.write("Underweight");
+            } else if (BMI < 25) {
+                document.write("Normal");
+            } else if (bmi < 30.0) {
+                document.write("Overweight");
+            } else {
+                document.write("Obese");
+            }
+        }
+</script>
+</body>
+</html>
